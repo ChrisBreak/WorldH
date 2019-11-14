@@ -1,0 +1,24 @@
+html, body {
+	padding: 20;
+	margin: 25;
+	box-sizing: border-box;
+	font-family: Helvetica, Calibri, Roboto, Open Sans, sans-serif;
+	background-color: #ffff67;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+svg {
+	margin:auto;
+	display:block;
+}
+
+.hidden {
+	display: none;
+}
+
+.legend-size circle {
+	fill: #e41a1c;
+}
