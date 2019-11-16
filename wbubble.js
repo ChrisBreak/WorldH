@@ -134,8 +134,8 @@ function setupChart(){
 
 		node.append('rect')
 			.attr('height', (d) => {
-				console.log(d.trust * 40);
-				return (d.trust * 40);
+				console.log(+d.trust * 40);
+				return (+d.trust * 40);
 			})
 			.attr('width', 4)
 			.attr('fill', (d) => computeColor(scaleColor(d.cat)))
