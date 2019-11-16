@@ -133,7 +133,10 @@ function setupChart(){
 			.attr("transform", (d) => "translate(0,20)");
 
 		node.append('rect')
-			.attr('height', (d) => (+d.trust * 40))
+			.attr('height', (d) => {
+				console.log(d.trust * 40);
+				return (d.trust * 40);
+			})
 			.attr('width', 4)
 			.attr('fill', (d) => computeColor(scaleColor(d.cat)))
 			.attr("transform", (d) => "translate(-6,"+(-d.trust * 40)+")");
