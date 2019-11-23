@@ -1,0 +1,25 @@
+body {
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+svg {
+    font: 10px sans-serif;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.tooltip {
+	position: absolute;
+  background-color: #555;
+  border-radius: 6px;
+  padding: 6px;
+  font-size: 8px;
+  color: white;
+  visibility: hidden;
+}
