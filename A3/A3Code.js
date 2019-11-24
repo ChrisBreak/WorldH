@@ -8,10 +8,10 @@ function showTooltip(country, lifeF, lifeM) {
     .style('left', (d3.event.pageX+8) + 'px')
     .style('top', (d3.event.pageY+8) + 'px')
     .style('width', () => {
-      if ((country.length * 8) < 130) {
-        return 130+'px';
+      if ((country.length * 6) < 100) {
+        return 100+'px';
       }
-      return country.length * 8 + 'px';
+      return country.length * 6 + 'px';
     });
 }
 
