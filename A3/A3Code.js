@@ -286,7 +286,7 @@ window.onload = function() {
               hideTooltip();
             })
             .on('click', (d) => {
-              //console.log(d);
+              console.log(d);
               performInteraction(d.id, d.Country, +d['Surface_area']);
             });
 
