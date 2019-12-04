@@ -1,0 +1,85 @@
+.continent {
+	fill: #ababae;
+	stroke: #000000;
+	stroke-width: 2;
+}
+
+.labels {
+	font-family: sans-serif;
+	font-size: 20px;
+	fill: #3c373d;
+	text-align: center;
+	margin: auto;
+}
+
+.tooltip {
+	position: absolute;
+	text-align: left;
+	padding: 10px;
+	font: 17px sans-serif;
+	background: #ffffff;
+	border: 0;
+	pointer-events: none;
+	border-radius: 6px;
+}
+
+.instructDiv {
+	position: absolute;
+	text-align: left;
+	padding: 10px;
+	font: 25px sans-serif;
+	border: 0px;
+	pointer-events: none;
+	border-radius: 6px;
+}
+
+
+.bigText{
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-weight: 300;
+		font-size: 50px;
+		stroke: black;
+		stroke-width: 1;
+}
+
+.text1{
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-weight: bolder;
+		font-size: 17px;
+		stroke: black;
+		stroke-width: 0;
+}
+
+.text2{
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-weight: bolder;
+		font-size: 22px;
+		stroke: black;
+		stroke-width: 0.3;
+}
+
+body {
+		text-align: center;
+}
+
+input {
+  margin: 10px;
+	width: 350px;
+	height: 55px;
+}
+
+button {
+  margin: 10px;
+	width: 130px;
+	height: 55px;
+	border-radius: 8px;
+	background-color: #3586af;
+	color: white;
+}
+
+.tick line {
+}
+
+.tick line {
+	stroke: #cecece;
+}
