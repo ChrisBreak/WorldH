@@ -170,9 +170,7 @@ var nullC = ["AFG", "ATA", "BLZ", "BEN","BMU","BTN","BOL","BIH","BRN","BFA","BDI
         addText(countryName(d), continentName(d));
 
         var happy = +d.properties.happiness;
-        //let happy1 = parseFloat(happy).toFixed(3);
         var living = +d.properties.livingIndex;
-        //let living1 = parseFloat(living).toFixed(3);
         let happy1, living1;
 
         if(happy == 0)
@@ -190,7 +188,7 @@ var nullC = ["AFG", "ATA", "BLZ", "BEN","BMU","BTN","BOL","BIH","BRN","BFA","BDI
           .duration(100)
           .style("opacity", 0.9);
 
-        tooltip.html(d.properties.name +  "<br />" + "Cost Living Index: " + living1 +
+        tooltip.html(d.properties.name +  "<br />" + "Cost of Living Index: " + living1 +
               "<br />" + "Happiness Score: " +  happy1)
           .style("left", (d3.event.pageX) + "px")
           .style("font-size", "17px")
@@ -273,15 +271,12 @@ var nullC = ["AFG", "ATA", "BLZ", "BEN","BMU","BTN","BOL","BIH","BRN","BFA","BDI
         .attr("d", path)
         .attr("fill", function (d) {
           if (developmentStatus(d) == "Developed") {
-            //d3.select(this).style('fill', colours[0]);
             d3.select(this).classed("Developed", true)
           }
           if (developmentStatus(d) == "Developing") {
-            //d3.select(this).style('fill', colours[1]);
             d3.select(this).classed("Developing", true)
           }
           if (developmentStatus(d) == "Underdeveloped") {
-            //d3.select(this).style('fill', colours[2]);
             d3.select(this).classed("Underdeveloped", true)
           }
 
