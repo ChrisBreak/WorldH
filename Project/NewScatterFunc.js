@@ -81,7 +81,7 @@ GDPLink.on("click", () => {window.open(
    '_blank' // <- This is what makes it open in a new window.
 )});
 happyLink.on("click", () => {window.open(
-   'https://www.kaggle.com/unsdsn/world-happiness/download',
+   'https://www.kaggle.com/unsdsn/world-happiness/',
    '_blank' // <- This is what makes it open in a new window.
 )});
 
