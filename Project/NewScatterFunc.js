@@ -41,6 +41,49 @@ function showScatterplot(clickedCountries) {
       darkLayer.style('visibility', 'hidden');
       d3.select('.instructDiv').style('opacity', 1);
     });
+  
+  happyLink = scatterplot.append("text")
+     .attr('x', scatterWidth-150)
+     .attr('y', 900)
+     .attr("fill", "#000")
+     .attr("font-weight", "bold")
+     .attr("font-size", 20)
+     .attr("text-anchor", "middle")
+     .style('cursor', 'pointer')
+     .text("*Happiness Source");
+
+ giniLink = scatterplot.append("text")
+     .attr('x', scatterWidth-150)
+     .attr('y', 950)
+     .attr("fill", "#000")
+     .attr("font-weight", "bold")
+     .attr("font-size", 20)
+     .attr("text-anchor", "middle")
+     .style('cursor', 'pointer')
+     .text("*Gini Coefficient Source");
+
+ GDPLink = scatterplot.append("text")
+     .attr('x', scatterWidth-150)
+     .attr('y', 1000)
+     .attr("fill", "#000")
+     .attr("font-weight", "bold")
+     .attr("font-size", 20)
+     .attr("text-anchor", "middle")
+     .style('cursor', 'pointer')
+     .text("*GDP Source");
+
+giniLink.on("click", () => {window.open(
+   'https://data.worldbank.org/indicator/SI.POV.GINI',
+   '_blank' // <- This is what makes it open in a new window.
+)});
+GDPLink.on("click", () => {window.open(
+   'https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD',
+   '_blank' // <- This is what makes it open in a new window.
+)});
+happyLink.on("click", () => {window.open(
+   'https://www.kaggle.com/unsdsn/world-happiness/download',
+   '_blank' // <- This is what makes it open in a new window.
+)});
 
   // create a clipping region
   scatterplot.append("g").append("clipPath")
